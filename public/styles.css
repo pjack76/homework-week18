@@ -1,11 +1,13 @@
 body {
   font-size: 120%;
   font-family: Arial;
+  background-color: palegoldenrod;
 }
 
 button, input {
   font-size: 100%;
   font-family: Arial;
+  border-radius: 10px;
 }
 
 table {
@@ -14,12 +16,21 @@ table {
 
 td, th {
   border: 1px solid #dddddd;
-  text-align: left;
+  text-align: center;
   padding: 8px;
 }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
+thead {
+  background-color: goldenrod;
+  
+}
+
+tbody tr:nth-child(even) {
+  background-color: palegreen;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: palevioletred;
 }
 
 .error {
@@ -35,6 +46,9 @@ tr:nth-child(even) {
 .total {
   font-size: 150%;
   text-decoration: underline;
+  font-family: Tahoma;
+  color: blueviolet;
+  font-weight: bolder;
 }
 
 .form {
@@ -48,4 +62,14 @@ tr:nth-child(even) {
   overflow: auto;
   width: 90%;
   margin: 0 auto;
+}
+
+#add-btn {
+  background-color: forestgreen;
+  color: goldenrod;
+}
+
+#sub-btn {
+  background-color: darkred;
+  color: powderblue;
 }
